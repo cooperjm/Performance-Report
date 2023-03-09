@@ -14,7 +14,7 @@
 	justify-content: space-between;
 }
 
-.first-cover-image {
+.frame-image {
 	object-fit: cover;
 	width: 100%;
 }
@@ -105,4 +105,31 @@
 	align-items: center;
 	bottom: 0;
 	width: 100%;
+}
+
+.frame-dom-logo {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.frame-dom-logo img {
+	max-width: 100%;
+	padding-top: 0.7%;
+}
+
+.frame-dom-logo p {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 14px;
+	/* identical to box height, or 117% */
+
+	letter-spacing: 2px;
+	text-transform: uppercase;
+
+	color: #ffffff;
+	padding-top: 0.5%;
 }

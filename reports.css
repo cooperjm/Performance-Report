@@ -136,3 +136,22 @@
 	color: #ffffff;
 	padding-top: 0.5%;
 }
+
+.frame-dom-logo .page-date {
+	position: absolute;
+	left: 4.45%;
+	
+	top: 19.64%;
+	
+
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 14px;
+	/* identical to box height, or 93% */
+
+	letter-spacing: 0.4px;
+
+	color: #ffffff;
+}

@@ -1,0 +1,108 @@
+#report {
+	font-family: 'Inter', sans-serif;
+}
+
+.page {
+	position: relative;
+}
+
+.page-content {
+	position: absolute;
+	inset: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.first-cover-image {
+	object-fit: cover;
+	width: 100%;
+}
+
+.dom-logo {
+	text-align: center;
+	margin-top: 7%;
+	/* transform: translateY(60%); */
+}
+
+.dom-logo h2 {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 25px;
+	line-height: 14px;
+	/* or 56% */
+
+	text-align: center;
+	letter-spacing: 14px;
+	text-transform: uppercase;
+
+	color: #000000;
+	transform: translateX(5px);
+}
+
+.dealerverse-logo {
+	text-align: center;
+}
+
+.dealerverse-logo img {
+	width: 100%;
+	max-width: 368px;
+}
+
+.dealerverse-logo h3 {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 14px;
+	/* or 58% */
+
+	letter-spacing: 0.4px;
+	margin: 0;
+	transform: translateY(7px);
+
+	color: #434343;
+}
+
+.disclaimer {
+	margin: 0 auto;
+	max-width: 90%;
+	margin-bottom: 7%;
+}
+
+.disclaimer h2 {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 14px;
+	margin-bottom: 25px;
+	/* identical to box height, or 58% */
+
+	letter-spacing: 0.4px;
+	text-align: center;
+	color: #000000;
+}
+.disclaimer p {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 14px;
+	/* or 117% */
+
+	letter-spacing: 0.4px;
+
+	color: #000000;
+}
+
+.company-logo {
+	position: absolute;
+	height: 8.5%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	bottom: 0;
+	width: 100%;
+}

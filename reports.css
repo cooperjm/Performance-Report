@@ -1,3 +1,14 @@
+body {
+	--blue-cell: rgba(50, 186, 255, 0.5);
+	--purple-cell: rgba(145, 85, 253, 0.5);
+	--border-color: rgba(58, 53, 65, 0.12);
+	--green: #56CA00;
+	--puple: #9155FD;
+	--orange: #FFB400;
+	--red: #FF4C51;
+	--blue: #16B1FF;
+}
+
 #report {
 	font-family: 'Inter', sans-serif;
 }
@@ -6,12 +17,14 @@
 	position: relative;
 }
 
-.page-content {
+.page-content-cover {
 	position: absolute;
 	inset: 0;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	align-items: center;
+	margin-top: 5%;
 }
 
 .frame-image {
@@ -140,9 +153,8 @@
 .frame-dom-logo .page-date {
 	position: absolute;
 	left: 4.45%;
-	
+
 	top: 19.64%;
-	
 
 	font-family: 'Inter';
 	font-style: normal;
@@ -154,4 +166,325 @@
 	letter-spacing: 0.4px;
 
 	color: #ffffff;
+}
+
+.page-content {
+	position: absolute;
+	inset: 0;
+	display: flex;
+	flex-direction: column;
+	/* justify-content: space-between; */
+	align-items: center;
+	margin-top: 5%;
+	margin-left: 2.7%;
+	margin-bottom: 2.7%;
+	margin-right: 2.7%;
+	gap: 20px;
+}
+
+.page-title {
+	align-self: flex-start;
+	width: 100%;
+	/* flex-grow: 1; */
+}
+
+.page-title h2 {
+	/* Light/Typography/H6 */
+
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 32px;
+	/* identical to box height, or 160% */
+
+	letter-spacing: 0.15px;
+
+	color: rgba(58, 53, 65, 0.87);
+	margin-top: 0.5%;
+	margin-bottom: -10px;
+}
+
+.box-shadow {
+	box-shadow: 0px 2px 12px -4px rgba(58, 53, 65, 0.1),
+		0px 2px 12px -4px rgba(58, 53, 65, 0.08),
+		0px 6px 16px -4px rgba(58, 53, 65, 0.1);
+}
+
+.border-radius {
+	border-radius: 6px;
+}
+
+.full-width-chart {
+	background: #ffffff;
+	overflow: hidden;
+}
+
+.full-width-chart img {
+	max-width: 100%;
+}
+
+.half-width-chart {
+	background: #ffffff;
+	flex-grow: 1;
+	padding-left: 20px;
+	padding-right: 20px;
+	max-width: 50%;
+	/* overflow: hidden; */
+}
+
+.half-width-area {
+	display: flex;
+	gap: 20px;
+	width: 100%;
+}
+.half-width-area h3 {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 20px;
+	/* identical to box height, or 143% */
+
+	letter-spacing: 0.15px;
+
+	/* Light/Text/Primary */
+
+	color: rgba(58, 53, 65, 0.87);
+}
+
+.half-header {
+	display: flex;
+	flex-direction: row;
+}
+
+.half-header-first,
+.half-header-second {
+	display: flex;
+	flex-grow: 1;
+}
+
+.half-header-second {
+	position: relative;
+	min-height: 68px;
+	align-items: flex-end;
+	padding-left: 25%;
+	padding-bottom: 1%;
+}
+.half-header-second .vistor-number {
+	/* Light/Typography/H6 */
+
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 32px;
+	/* identical to box height, or 160% */
+
+	letter-spacing: 0.15px;
+
+	/* Light/Text/Primary */
+
+	color: rgba(58, 53, 65, 0.87);
+}
+
+.half-header-second .vistor-text {
+	/* Light/Typography/Caption */
+
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 14px;
+	/* identical to box height, or 117% */
+
+	letter-spacing: 0.4px;
+
+	/* Light/Text/Secondary */
+
+	color: rgba(58, 53, 65, 0.6);
+}
+
+.half-header-second img {
+	width: 108px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	transform: translateY(-30px) translateX(30px);
+}
+
+.half-header-second p {
+	margin: 0;
+}
+
+.table-under-chart {
+	width: 100%;
+	table-layout: fixed;
+}
+
+.table-under-chart thead {
+	background: #fafbfc;
+}
+
+.table-under-chart th,
+.table-under-chart td {
+	text-align: center;
+	padding: 15px 20px;
+}
+
+.divider-container {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-end;
+}
+
+.cell-divider {
+	width: 3px;
+	background-color: var(--border-color);
+	height: 15px;
+	border-radius: 50px;
+	transform: translateY(2px);
+}
+
+.table-under-chart tfoot {
+	border-top: solid 2px var(--border-color);
+}
+.table-under-chart tbody tr:not(:first-child) {
+	border-top: solid 2px var(--border-color);
+}
+
+.table-under-chart tbody tr {
+	--cell-color: var(--blue-cell);
+}
+
+.table-under-chart tbody tr:nth-child(2n) {
+	--cell-color: var(--purple-cell);
+}
+
+.table-under-chart tbody tr td:nth-child(2n) {
+	background-color: var(--cell-color);
+}
+
+.ws-chart {
+	width: 100%;
+	table-layout: fixed;
+}
+
+.ws-chart tr {
+	border-top: solid 2px var(--border-color);
+}
+
+.ws-chart thead th {
+	/* Light/Typography/Caption */
+
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 14px;
+	/* identical to box height, or 117% */
+
+	text-align: right;
+	letter-spacing: 0.4px;
+
+	/* Light/Text/Secondary */
+
+	color: rgba(58, 53, 65, 0.6);
+
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.ws-chart tbody td,
+th {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.ws-chart tbody td {
+	/* Light/Typography/Caption */
+
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 14px;
+	/* identical to box height, or 117% */
+
+	text-align: right;
+	letter-spacing: 0.4px;
+
+	/* Light/Text/Primary */
+
+	color: rgba(58, 53, 65, 0.87);
+}
+
+.ws-chart tbody th {
+	/* Light/Typography/Caption */
+
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 14px;
+	/* identical to box height, or 117% */
+
+	text-align: left;
+	letter-spacing: 0.4px;
+
+	/* Light/Text/Primary */
+
+	color: rgba(58, 53, 65, 0.87);
+}
+
+.greenball {
+	background-color: var(--green);
+	border-radius: 50%;
+	width: 12px;
+	height: 12px;
+	display: inline-block;
+	margin-right: 5px;
+	transform: translateY(1px);
+}
+
+.orangeball {
+	background-color: var(--orange);
+	border-radius: 50%;
+	width: 12px;
+	height: 12px;
+	display: inline-block;
+	margin-right: 5px;
+	transform: translateY(1px);
+}
+
+.blueball {
+	background-color: var(--blue);
+	border-radius: 50%;
+	width: 12px;
+	height: 12px;
+	display: inline-block;
+	margin-right: 5px;
+	transform: translateY(1px);
+}
+
+.purpleball {
+	background-color: var(--puple);
+	border-radius: 50%;
+	width: 12px;
+	height: 12px;
+	display: inline-block;
+	margin-right: 5px;
+	transform: translateY(1px);
+}
+
+.redball {
+	background-color: var(--red);
+	border-radius: 50%;
+	width: 12px;
+	height: 12px;
+	display: inline-block;
+	margin-right: 5px;
+	transform: translateY(1px);
 }

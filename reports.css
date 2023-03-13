@@ -593,3 +593,69 @@ th {
 	left: 4px;
 	top: -4px;
 }
+
+.ld-chart {
+	width: 100%;
+	table-layout: fixed;
+	font-size: 10px;
+  }
+
+.ld-chart tbody:last-child tr:last-child td:first-child {
+	border-radius: 0 0 0 6px;
+}
+
+.ld-chart tbody:last-child tr:last-child td:last-child {
+	border-radius: 0 0 6px 0;
+}
+
+.ld-chart tbody td,
+th {
+  padding-top: 7px;
+  padding-bottom: 4px;
+}
+
+.ld-chart th,
+td {
+  padding: 14px;
+  color: hsl(260, 7%, 33%);
+}
+
+.ld-chart th:first-child {
+  background: #9155fd;
+  color: white;
+  border-radius: 6px 0 0 0;
+}
+
+.ld-chart th:last-child {
+	border-radius: 0 6px 0 0;
+  }
+
+.ld-chart th:first-child::after {
+  padding-left: 20px;
+  color: white;
+}
+
+.ld-chart tr:first-child {
+  font-weight: bold;
+}
+
+.ld-chart td:last-child  {
+	background: rgba(145, 85, 253, 0.5);
+}
+
+.ld-chart th::after {
+  content: "|";
+  padding-left: 4px;
+  color: #757575;
+}
+
+.ld-chart th {
+  background-color: #f9fafc;
+  box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.12);
+}
+
+.ld-chart td {
+  background: white;
+  border-bottom: 0.5px solid rgba(58, 53, 65, 0.12);
+  box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.12);
+}

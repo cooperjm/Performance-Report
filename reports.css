@@ -609,13 +609,13 @@ th {
 }
 
 .ld-chart tbody td,
-th {
+.ld-chart tbody th {
   padding-top: 7px;
   padding-bottom: 4px;
 }
 
 .ld-chart th,
-td {
+.ld-chart td {
   padding: 14px;
   color: hsl(260, 7%, 33%);
 }

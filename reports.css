@@ -519,43 +519,54 @@ th {
 	background-color: var(--puple);
 }
 
-.up-arrow::before {
-	content: '\2039';
-	display: inline-block;
-	font-size: 25px;
-	font-weight: bold;
-	transform: rotate(90deg);
-	/* width: 0; */
-	/* height: 0;
-	border-left: 4px solid transparent;
-	border-right: 4px solid transparent;
-	border-bottom: 4px solid var(--green);
-	margin-right: 5px; */
+.vdpVisits th {
+	background-color: rgba(58, 53, 65, 0.22);
+}
+
+.vdpVisits td {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 10px;
+	line-height: 19px;
+	/* identical to box height, or 210% */
+
+	letter-spacing: 0.15px;
+
+	/* Light/Text/Primary */
+
+	color: rgba(58, 53, 65, 0.87);
+	padding-left: 20px;
+	padding-top: 5px;
+}
+
+.green-text {
+	color: var(--green) !important;
 }
 
 .gg-chevron-up {
-    box-sizing: border-box;
-    position: relative;
-    display: inline-block;
-    transform: scale(1);
-    width: 18px;
-    height: 10px;
-    border: 2px solid transparent;
-    border-radius: 100px;
-		color: var(--green);
+	box-sizing: border-box;
+	position: relative;
+	display: inline-block;
+	transform: scale(1);
+	width: 18px;
+	height: 10px;
+	border: 2px solid transparent;
+	border-radius: 100px;
+	color: var(--green);
 }
 .gg-chevron-up::after {
-    content: "";
-    display: block;
-    box-sizing: border-box;
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    border-top: 3px solid;
-    border-right: 3px solid;
-    transform: rotate(-45deg);
-    left: 4px;
-    bottom: -4px
+	content: '';
+	display: block;
+	box-sizing: border-box;
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	border-top: 3px solid;
+	border-right: 3px solid;
+	transform: rotate(-45deg);
+	left: 4px;
+	bottom: -4px;
 }
 
 .gg-chevron-down {
@@ -570,7 +581,7 @@ th {
 	color: var(--red);
 }
 .gg-chevron-down::after {
-	content: "";
+	content: '';
 	display: block;
 	box-sizing: border-box;
 	position: absolute;
@@ -580,6 +591,5 @@ th {
 	border-right: 3px solid;
 	transform: rotate(45deg);
 	left: 4px;
-	top: -4px
+	top: -4px;
 }
-

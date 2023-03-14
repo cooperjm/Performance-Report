@@ -531,9 +531,7 @@ body {
 	padding-top: 5px;
 }
 
-.green-text {
-	color: var(--green) !important;
-}
+
 
 .gg-chevron-up {
 	box-sizing: border-box;
@@ -737,6 +735,14 @@ body {
 
 .overflow-hidden {
 	overflow: hidden;
+}
+
+.green-text {
+	color: var(--green) !important;
+}
+
+.red-text {
+	color: var(--red) !important;
 }
 
 /* .p-10-20 {
